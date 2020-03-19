@@ -2,11 +2,11 @@ PREFIX?=/usr/X11R6
 CFLAGS?=-Os -pedantic -Wall
 
 all:
-		$(CC) $(CFLAGS) -I$(PREFIX)/include slowm.c -L$(PREFIX)/lib -lX11 -o slowm
+		$(CC) $(CFLAGS) -I$(PREFIX)/include stowm.c -L$(PREFIX)/lib -lX11 -o stowm
 
 clean:
-		rm -f slowm
+		rm -f stowm
 
 install:
-		rm ~/Scripts/slowm
-		cp slowm ~/Scripts/slowm
+		rm ~/Scripts/stowm
+		cp stowm ~/Scripts/stowm
